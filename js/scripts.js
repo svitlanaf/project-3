@@ -36,19 +36,5 @@ $(document).ready(function() {
       console.log(modifiedrRange)
       $(".output").text(modifiedrRange).show();
     }
-    // $("#result").show();
   });
 });
-
-// var numbers = []
-// for (var i = 0; i<=number; i = i + 1) {
-//   if (hasDigit(i, 3)) {
-//     numbers.push(words[2])
-//   } else if (hasDigit(i, 2)) {
-//     numbers.push(words[1])
-//   } else if (hasDigit(i, 1)) {
-//     numbers.push(words[0])
-//   } else {
-//     numbers.push(i)
-//   }
-// }

@@ -38,7 +38,8 @@ _Output: "0, Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that 4, 5, 6, 7,
 
 ## Known Bugs / Limitations
 
-* .
+* The result in output that meets an exception doesn't have quotation marks.
+* Input accepts letters, white spaces and special characters.
 
 ## Support and contact details
 
