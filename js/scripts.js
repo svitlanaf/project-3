@@ -1,7 +1,7 @@
 // Business logic
-word1 = ["Beep!"]
-word2 = ["Boop!"]
-word3 = ["I'm sorry, Dave. I'm afraid I can't do that"]
+var word1 = "\"Beep!\""
+var word2 = "\"Boop!\""
+var word3 = "\"I'm sorry, Dave. I'm afraid I can't do that.\""
 
 var hasDigit = function(number, digit) {
   return number.toString().includes(digit.toString())
@@ -29,8 +29,10 @@ $(document).ready(function() {
   $("form#formOne").submit(function(event) {
     event.preventDefault();
     var number = parseInt($("input#userInput").val());
-    if (($("input#userInput").val() === "")) {
-      alert("Please enter a number");
+
+    var input = $("#userInput").val();
+    if ($('input').val() === "") {
+      alert ("Please enter a number");
     } else {
       var modifiedrRange = rangeOfnumbers(number)
       console.log(modifiedrRange)
