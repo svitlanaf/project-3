@@ -20,16 +20,16 @@ _Input: "3"_
 _Output: "0, Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that"._
 
 _Exceptions._
-_The first exception should apply unless the second exception does, and the same with the second and third_.
+_Exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third_.
 1. _The number 13 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that"._
 _Input: "13"_
-_Output: "0, Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that 4, 5, 6, 7, 8, 9, Beep! Beep! Beep! I'm sorry, Dave. I'm afraid I can't do that"._
+_Output: "0, Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that 4, 5, 6, 7, 8, 9, Beep! Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that"._
 2. _The number 21 should be replaced with "Boop"._
 _Input: "21"_
-_Output: "0, Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that 4, 5, 6, 7, 8, 9, Beep! Beep! Beep! I'm sorry, Dave. I'm afraid I can't do that Beep! Beep! Beep! Beep! Beep! Beep! Boop! Boop!"_
+_Output: "0, Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that 4, 5, 6, 7, 8, 9, Beep! Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that Beep! Beep! Beep! Beep! Beep! Beep! Boop! Boop!"_
 3. _The number 32 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."_
 _Input: "32"_
-_Output: "0, Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that 4, 5, 6, 7, 8, 9, Beep! Beep! Beep! I'm sorry, Dave. I'm afraid I can't do that Beep! Beep! Beep! Beep! Beep! Beep! Boop! Boop! Boop! Boop! Boop! Boop! Boop! Boop! Boop! Boop! I'm sorry, Dave. I'm afraid I can't do that Beep! I'm sorry, Dave. I'm afraid I can't do that"._
+_Output: "0, Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that 4, 5, 6, 7, 8, 9, Beep! Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that Beep! Beep! Beep! Beep! Beep! Beep! Boop! Boop! Boop! I'm afraid I can't do that Boop! Boop! Boop! Boop! Boop! Boop! I'm sorry, Dave. I'm afraid I can't do that I'm sorry, Dave. I'm afraid I can't do that I'm sorry, Dave. I'm afraid I can't do that"._
 
 ## Setup/Installation Requirements
 
