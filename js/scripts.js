@@ -2,6 +2,8 @@
 var word1 = "\"Beep!\""
 var word2 = "\"Boop!\""
 var word3 = "\"I'm sorry, Dave. I'm afraid I can't do that.\""
+var word4 = "\"I'm sorry, "
+var word5 = "I'm afraid I can't do that.\""
 
 var hasDigit = function(number, digit) {
   return number.toString().includes(digit.toString())
@@ -10,14 +12,18 @@ var hasDigit = function(number, digit) {
 var rangeOfnumbers = function(number) {
   var numbers = []
   var number = parseInt($("input#userInput").val());
+  var userName = $("input#userName").val();
+  $(".userName").text(userName)
   for (var i = 0; i <= number; i = i + 1) {
-    if (hasDigit(i, 3)) {
+    if ((i % 3 === 0 ) && i>0) {
+      numbers.push(word4 + userName + ". " + word5)
+    } else if (hasDigit(i, 3)) {
       numbers.push(word3)
     } else if (hasDigit(i, 2)) {
       numbers.push(word2)
     } else if (hasDigit(i, 1)) {
       numbers.push(word1)
-    } else {
+    }  else {
       numbers.push(i)
     }
   }
