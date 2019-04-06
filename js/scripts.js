@@ -5,7 +5,7 @@ var word3 = "\"I'm sorry, Dave. I'm afraid I can't do that.\""
 
 var hasDigit = function(number, digit) {
   return number.toString().includes(digit.toString())
-  }
+}
 
 var rangeOfnumbers = function(number) {
   var numbers = []
@@ -26,17 +26,24 @@ var rangeOfnumbers = function(number) {
 
 // UI logic
 $(document).ready(function() {
-  $("form#formOne").submit(function(event) {
-    event.preventDefault();
-    var number = parseInt($("input#userInput").val());
+      $("form#formOne").submit(function(event) {
+          event.preventDefault();
+          var userName = $("input#userName").val();
+          $(".userName").text(userName);
+          console.log (userName)
+          if ($('input').val() === "") {
+            alert('Please enter your name');
 
-    var input = $("#userInput").val();
-    if ($('input').val() === "") {
-      alert ("Please enter a number");
-    } else {
-      var modifiedrRange = rangeOfnumbers(number)
-      console.log(modifiedrRange)
-      $(".output").text(modifiedrRange).show();
-    }
-  });
-});
+          } else {
+            var number = parseInt($("input#userInput").val());
+            var input = $("#userInput").val();
+            if (($('input').val() === "") || number <0) {
+              alert("Please enter a number");
+            } else {
+              var modifiedrRange = rangeOfnumbers(number)
+              console.log(modifiedrRange)
+              $(".output").text(modifiedrRange).show();
+            }
+          }
+          });
+      });

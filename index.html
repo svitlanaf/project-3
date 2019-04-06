@@ -15,10 +15,11 @@
 
     <form id="formOne">
       <div class="form-group">
+        <label for="userName">Enter your name:</label>
+        <input id="userName" type="text" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"> <br><br><br>
         <label for="userInput">Enter a number:</label>
         <input id="userInput" type="number">
       </div>
-
       <button type="submit" class="btn btn-info">Submit</button>
     </form>
 
