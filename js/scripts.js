@@ -9,7 +9,7 @@ var hasDigit = function(number, digit) {
   return number.toString().includes(digit.toString())
 }
 
-var rangeOfnumbers = function(number, userName) {
+var rangeOfNumbers = function(number, userName) {
   var numbers = []
   for (var i = 0; i <= number; i = i + 1) {
     if ((i % 3 === 0) && i > 0) {
@@ -27,6 +27,11 @@ var rangeOfnumbers = function(number, userName) {
   return numbers
 }
 
+var joinNumbers = function(numbers) {
+  var numbersToString = numbers.join(", ")
+  return numbersToString
+}
+
 var reverseNumbers = function(numbers) {
   var reversedNumbers = numbers.reverse()
   return reversedNumbers
@@ -39,7 +44,6 @@ $(document).ready(function() {
     event.preventDefault()
     var userName = $("input#userName").val()
     $(".userName").text(userName)
-    // console.log(userName)
     if ($('input').val() === "") {
       alert('Please enter your name')
     } else {
@@ -48,9 +52,9 @@ $(document).ready(function() {
       if (($('input').val() === "") || number < 0) {
         alert("Please enter a number")
       } else {
-        var modifiedRange = rangeOfnumbers(number, userName)
-        var userOutputstring = modifiedRange.join(", ")
-        $(".output1").text(userOutputstring).show()
+        var modifiedRange = rangeOfNumbers(number, userName)
+        var userOutputString = joinNumbers(modifiedRange)
+        $(".output1").text(userOutputString).show()
         var reversedOutput = reverseNumbers(modifiedRange)
         $(".output2").text(reversedOutput).hide()
       }
