@@ -18,6 +18,13 @@ _Output: "0, Beep! Boop!"_
 4. _Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that"._
 _Input: "3"_
 _Output: "0, Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that"._
+5. _For numbers divisible by 3, the message "I'm sorry, Dave. I'm afraid I can't do that" will have user's name instead of "Dave"._
+_User name: Anna_
+_Input: "6"_
+_Output: "0, "Beep!", "Boop!", "I'm sorry, Anna. I'm afraid I can't do that.", 4, 5, "I'm sorry, Anna. I'm afraid I can't do that."_
+6. _By clicking on "Reverse" button the program returns reversed range of numbers including all exceptions_.
+_Input: "5"_
+_Output: "5,4,"I'm sorry, Anna. I'm afraid I can't do that.","Boop!","Beep!",0"_
 
 _List of exceptions._
 _Exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third_.
