@@ -1,0 +1,15 @@
+body {
+  margin: 30px;
+  background-color: #38e24c;
+  position: fixed;
+}
+
+.btn {
+  margin-left: 40%;
+}
+
+.btn-info {
+    color: #0a0a09;
+    background-color: #f3ff77;
+    border-color: #f3f720;
+}
