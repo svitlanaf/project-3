@@ -66,6 +66,12 @@ _Input: "32"_
 
 _Output: "0, Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that 4, 5, 6, 7, 8, 9, Beep! Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that Beep! Beep! Beep! Beep! Beep! Beep! Boop! Boop! Boop! I'm afraid I can't do that Boop! Boop! Boop! Boop! Boop! Boop! I'm sorry, Dave. I'm afraid I can't do that I'm sorry, Dave. I'm afraid I can't do that I'm sorry, Dave. I'm afraid I can't do that"._
 
+* _If number is greater than 100 the result is replaced with an image of a cat and  "R U kidding me?!?!?"_
+
+_Input: "101"_
+
+_Output: an image of a cat and "R U kidding me?!?!?"_
+
 ## Setup/Installation Requirements
 
 * _Clone this repository_

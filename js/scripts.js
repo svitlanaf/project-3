@@ -40,14 +40,19 @@ var reverseNumbers = function(numbers) {
 
 // UI logic
 $(document).ready(function() {
+  $("#cat").hide()
   $("form#formOne").submit(function(event) {
     event.preventDefault()
+    $("#cat").hide()
     $(".output1").hide()
     var userName = $("input#userName").val()
     $(".userName").text(userName)
     var number = parseInt($("input#userInput").val())
     if (userName === "" && (number === "") || (number === "") || number < 0) {
       alert('Please enter your name and a number')
+    } else if (number > 100) {
+      $("#cat").show()
+      $(".output2").text(reversedOutput).hide()
     } else {
       var modifiedRange = rangeOfNumbers(number, userName)
       var userOutputString = joinNumbers(modifiedRange)
