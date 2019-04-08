@@ -1,6 +1,6 @@
-# _Beep Boop_
+# _Beep Boop Game_
 
-#### _Beep Boop is a web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number,  04/05/2019_
+#### _Beep Boop game is a web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number,  04/05/2019_
 
 #### By _**Svitlana Filatova**_
 
@@ -16,19 +16,19 @@ _Output: "0, 1, 2, 3, 4"_
 
 _Input: "1"_
 
-_Output: "0, Beep!"_
+_Output: "0, "Beep!""_
 
 3. _Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"_
 
 _Input: "2"._
 
-_Output: "0, Beep! Boop!"_
+_Output: "0, "Beep!" "Boop!""_
 
-4. _Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that"._
+4. _Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that."_
 
 _Input: "3"_
 
-_Output: "0, Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that"._
+_Output: "0, "Beep!" "Boop!" "I'm sorry, Dave. I'm afraid I can't do that.""_
 
 5. _For numbers divisible by 3, the message "I'm sorry, Dave. I'm afraid I can't do that" will have user's name instead of "Dave"._
 
