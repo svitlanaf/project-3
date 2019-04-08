@@ -41,25 +41,23 @@ var reverseNumbers = function(numbers) {
 // UI logic
 $(document).ready(function() {
   $("form#formOne").submit(function(event) {
-      event.preventDefault()
-
-      var userName = $("input#userName").val()
-      $(".userName").text(userName)
-      var number = parseInt($("input#userInput").val())
-      var number = parseInt($("input#userInput").val())
-
-      if (userName === "" && (number === "") || (number === "") || number < 0) {
-        alert('Please enter your name and a number')
-      } else {
-        var modifiedRange = rangeOfNumbers(number, userName)
-        var userOutputString = joinNumbers(modifiedRange)
-        $(".output1").text(userOutputString).show()
-      }
+    event.preventDefault()
+    $(".output1").hide()
+    var userName = $("input#userName").val()
+    $(".userName").text(userName)
+    var number = parseInt($("input#userInput").val())
+    if (userName === "" && (number === "") || (number === "") || number < 0) {
+      alert('Please enter your name and a number')
+    } else {
+      var modifiedRange = rangeOfNumbers(number, userName)
+      var userOutputString = joinNumbers(modifiedRange)
+      $(".output1").text(userOutputString).show()
+    }
 
     $("#reversedOutput").click(function(event) {
       var modifiedRange = rangeOfNumbers(number, userName)
       var reversedOutput = reverseNumbers(modifiedRange)
       $(".output2").text(reversedOutput).show()
     })
-})
+  })
 })

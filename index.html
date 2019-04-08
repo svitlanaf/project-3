@@ -13,33 +13,41 @@
   <div class="container">
     <h1 style="text-align:center;">Beep Boop Game</h1> <br><br>
 
-    <form id="formOne" >
-      <div class="form-group" style= "display:flex; justify-content:center; align-items:center;">
-        <label for="userName">Enter your name:</label>
+    <form id="formOne">
+      <div class="form-group" style="justify-content:center; align-items:center;">
+        <label for="userName">Enter your name: </label>
         <input id="userName" type="text" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"> <br>
       </div>
-      <div class="form-group" style= "display:flex; justify-content:center; align-items:center;">
-        <label for="userInput">Enter a number:</label>
+      <div class="form-group" style="justify-content:center; align-items:center;">
+        <label for="userInput">Enter a number: </label>
         <input id="userInput" type="number"> <br>
       </div>
-      <div class="row" style= "display:flex; justify-content:center; align-items:center;">
-        <div class="col-md-6">
-              <button id="output" type="submit" class="btn btn-info">Submit</button>
-            <div class="panel-body">
-              <div id="resultOutput">
-                <p><span class="output1"></span></p>
+      <div class="row" style="justify-content:center; align-items:center;">
+        <div class="col-md-5">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <button id="output" type="submit" class="myButton">Submit</button>
+            </div>
+              <div class="panel-body">
+                <div id="resultOutput">
+                  <p><span class="output1"></span></p>
+                </div>
               </div>
             </div>
-        </div>
-        <div class="col-md-6">
-              <button id="reversedOutput" type="submit" class="btn btn-info">Reverse</button>
-            <div class="panel-body">
-              <div id="reverseOutput">
-                <p><span class="output2"></span></p>
+          </div>
+        <div class="col-md-5">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <button id="reversedOutput" type="submit" class="myButton">Reverse</button>
+            </div>
+              <div class="panel-body">
+                <div id="reverseOutput">
+                  <p><span class="output2"></span></p>
+                </div>
               </div>
             </div>
+          </div>
         </div>
-      </div>
     </form>
   </div>
 </body>
