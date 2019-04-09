@@ -1,3 +1,4 @@
+
 body {
   margin: 40px;
   background: #115128;
@@ -21,15 +22,43 @@ h4 {
 
 .panel {
   background-color: transparent;
+  border-bottom: transparent;
+  border: none;
 }
 
 .panel-info {
   border-color: transparent;
+  border-bottom: transparent;
+  border: none;
+}
+
+.panel-body {
+  border-color: transparent;
+  border-bottom: transparent;
+  border-bottom-color: transparent;
+  border: none;
+}
+
+.panel-info>.panel-footer+.panel-collapse>.panel-body {
+  border-bottom-color: transparent;
+  border: none;
+}
+
+.panel-default>.panel-footer+.panel-collapse>.panel-body {
+  border-bottom-color: transparent;
+  border: none;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+  border-top-color: transparent;
+  border: none;
 }
 
 .panel-info>.panel-heading {
   background-color: transparent;
   border-color: transparent;
+  border-bottom: transparent;
+  border: none;
 }
 
 .btn {
@@ -41,6 +70,14 @@ h4 {
 .row {
   margin-top: 50px;
   margin-left: 19%;
+  border-bottom: transparent;
+  border: none;
+}
+
+.col-md-5 {
+  border-color: transparent;
+  border-bottom: transparent;
+  border: none;
 }
 
 .form-group {

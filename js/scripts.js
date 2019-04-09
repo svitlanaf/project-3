@@ -12,7 +12,9 @@ var hasDigit = function(number, digit) {
 var rangeOfNumbers = function(number, userName) {
   var numbers = []
   for (var i = 0; i <= number; i = i + 1) {
-    if ((i % 3 === 0) && i > 0) {
+    if ((i % 3 == 0) && i > 0 && hasDigit(i, 2)) {
+      numbers.push(phrase2)
+    } else if ((i % 3 == 0) && i > 0) {
       numbers.push(phrase4 + userName + ". " + phrase5)
     } else if (hasDigit(i, 3)) {
       numbers.push(phrase3)
@@ -26,6 +28,7 @@ var rangeOfNumbers = function(number, userName) {
   }
   return numbers
 }
+
 
 var joinNumbers = function(numbers) {
   var numbersToString = numbers.join(", ")
@@ -43,6 +46,9 @@ $(document).ready(function() {
   $("#cat").hide()
   $("form#formOne").submit(function(event) {
     event.preventDefault()
+    $('body').css({
+      'background': 'blue'
+    })
     $("#cat").hide()
     $(".output1").hide()
     var userName = $("input#userName").val()
@@ -51,8 +57,8 @@ $(document).ready(function() {
     if (userName === "" && (number === "") || (number === "") || number < 0) {
       alert('Please enter your name and a number')
     } else if (number > 100) {
+      $(".reverseOutput").hide()
       $("#cat").show()
-      $(".output2").text(reversedOutput).hide()
     } else {
       var modifiedRange = rangeOfNumbers(number, userName)
       var userOutputString = joinNumbers(modifiedRange)
@@ -60,6 +66,10 @@ $(document).ready(function() {
     }
 
     $("#reversedOutput").click(function(event) {
+      event.preventDefault()
+      $('body').css({
+        'background': 'red'
+      })
       var modifiedRange = rangeOfNumbers(number, userName)
       var reversedOutput = reverseNumbers(modifiedRange)
       $(".output2").text(reversedOutput).show()

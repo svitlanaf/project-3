@@ -44,6 +44,10 @@ _Input: "5"_
 
 _Output: "5,4,"I'm sorry, Anna. I'm afraid I can't do that.","Boop!","Beep!",0"_
 
+7. _By clicking "Submit" button the background of a web page changes color to blue._
+
+8. _By clicking "Reverse" button the background of a web page changes color to red._
+
 _List of exceptions._
 
 _Exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third_.
@@ -79,7 +83,7 @@ _Output: an image of a cat and "R U kidding me?!?!?"_
 
 ## Known Bugs / Limitations
 
-* No bugs found during testing.
+* _If number > 100 the second click on a "Reverse" button shows the reversed result and a picture of a cat_.
 
 ## Support and contact details
 
