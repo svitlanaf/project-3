@@ -51,28 +51,28 @@ $(document).ready(function() {
     })
     $("#cat").hide()
     $(".output1").hide()
+    $(".output2").hide()
     var userName = $("input#userName").val()
     $(".userName").text(userName)
     var number = parseInt($("input#userInput").val())
     if (userName === "" && (number === "") || (number === "") || number < 0) {
       alert('Please enter your name and a number')
     } else if (number > 100) {
-      $(".reverseOutput").hide()
       $("#cat").show()
     } else {
       var modifiedRange = rangeOfNumbers(number, userName)
       var userOutputString = joinNumbers(modifiedRange)
       $(".output1").text(userOutputString).show()
-    }
 
-    $("#reversedOutput").click(function(event) {
-      event.preventDefault()
-      $('body').css({
-        'background': 'red'
+      $("#reversedOutput").click(function(event) {
+        event.preventDefault()
+        $('body').css({
+          'background': 'red'
+        })
+        var modifiedRange = rangeOfNumbers(number, userName)
+        var reversedOutput = reverseNumbers(modifiedRange)
+        $(".output2").text(reversedOutput).show()
       })
-      var modifiedRange = rangeOfNumbers(number, userName)
-      var reversedOutput = reverseNumbers(modifiedRange)
-      $(".output2").text(reversedOutput).show()
-    })
+    }
   })
 })
